@@ -41,10 +41,10 @@
     <PackageVersion Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <PackageVersion Include="BlazorWebView.Avalonia" Version="$(AvaloniaWebViewVersion)" />
-    <PackageVersion Include="WebView.Avalonia.Android" Version="$(AvaloniaWebViewVersion)" />
-    <PackageVersion Include="WebView.Avalonia.Desktop" Version="$(AvaloniaWebViewVersion)" />
-    <PackageVersion Include="WebView.Avalonia.iOS" Version="$(AvaloniaWebViewVersion)" />
+    <PackageVersion Include="BlazorWebView.Avalonia" Version="0.1.0-rc1.1.4" />
+    <PackageVersion Include="WebView.Avalonia.Android" Version="0.1.0-rc1.1.4" />
+    <PackageVersion Include="WebView.Avalonia.Desktop" Version="0.1.0-rc1.1.4" />
+    <PackageVersion Include="WebView.Avalonia.iOS" Version="0.1.0-rc1.1.4" />
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="DryIoc" Version="5.4.0" />
