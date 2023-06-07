@@ -27,12 +27,19 @@ public partial class App : Application
             setting.Selector = "#app";
 
             //because avalonia support the html css and js for resource ,so you must set the ResourceAssembly 
-            setting.IsAvaloniaResource = true;
-            setting.ResourceAssembly = typeof(AppWeb).Assembly;
+            setting.IsAvaloniaResource = false;
+            //setting.ResourceAssembly = typeof(AppWeb).Assembly;
         }, inject =>
         {
             //you can inject the resource in this
-            inject.AddSingleton<WeatherForecastService>();
+            inject.AddMasaBlazor(builder =>
+            {
+                builder.ConfigureTheme(theme =>
+                {
+                    theme.Themes.Light.Primary = "#4318FF";
+                    theme.Themes.Light.Accent = "#4318FF";
+                });
+            }); 
         });
     }
 
