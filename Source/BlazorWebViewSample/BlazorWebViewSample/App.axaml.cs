@@ -27,8 +27,8 @@ public partial class App : Application
             setting.Selector = "#app";
 
             //because avalonia support the html css and js for resource ,so you must set the ResourceAssembly 
-            setting.IsAvaloniaResource = false;
-            //setting.ResourceAssembly = typeof(AppWeb).Assembly;
+            setting.IsAvaloniaResource = true;
+            setting.ResourceAssembly = typeof(AppWeb).Assembly;
         }, inject =>
         {
             //you can inject the resource in this
@@ -39,7 +39,8 @@ public partial class App : Application
                     theme.Themes.Light.Primary = "#4318FF";
                     theme.Themes.Light.Accent = "#4318FF";
                 });
-            }); 
+            }).AddI18nForServer("wwwroot/i18n");
+            inject.AddGlobalForServer();
         });
     }
 
