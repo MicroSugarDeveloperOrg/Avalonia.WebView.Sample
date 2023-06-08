@@ -7,6 +7,7 @@ using BlazorWebViewSample.Views;
 using Microsoft.Extensions.DependencyInjection;
 using BlazorWebViewSampleShared;
 using BlazorWebViewSampleShared.Data;
+using BlazorWebViewSample.Extensions;
 
 namespace BlazorWebViewSample;
 public partial class App : Application
@@ -39,8 +40,8 @@ public partial class App : Application
                     theme.Themes.Light.Primary = "#4318FF";
                     theme.Themes.Light.Accent = "#4318FF";
                 });
-            }).AddI18nForServer("wwwroot/i18n");
-            inject.AddGlobalForServer();
+            });
+            inject.AddService("wwwroot/nav/nav.json");
         });
     }
 
