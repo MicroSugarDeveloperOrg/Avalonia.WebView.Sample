@@ -1,8 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.ReactiveUI;
 using Avalonia.WebView.Desktop;
-using Avalonia.WebView.Windows;
-using System;
 
 namespace BlazorWebViewSample.Desktop;
 
@@ -22,5 +20,5 @@ internal class Program
             .WithInterFont()
             .LogToTrace()
             .UseReactiveUI()
-            .UseWindowWebView();
+            .UseDesktopWebView();
 }
