@@ -3,14 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.33711.374
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebViewSample", "Source\BlazorWebViewSample\BlazorWebViewSample\BlazorWebViewSample.csproj", "{CFAF1D5B-DE87-4D65-8D9C-E37F7D0C6B74}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebViewSample.Android", "Source\BlazorWebViewSample\BlazorWebViewSample.Android\BlazorWebViewSample.Android.csproj", "{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebViewSample.Desktop", "Source\BlazorWebViewSample\BlazorWebViewSample.Desktop\BlazorWebViewSample.Desktop.csproj", "{AD3419E9-9797-4E37-9712-9F5B6E0BCF73}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebViewSample.iOS", "Source\BlazorWebViewSample\BlazorWebViewSample.iOS\BlazorWebViewSample.iOS.csproj", "{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Build", ".Build", "{8077486A-F479-4B3A-9A40-A93A54471703}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -27,7 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Build", ".Build", "{807748
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebViewSample.Shared", "Source\BlazorWebViewSample.Shared\BlazorWebViewSample.Shared.csproj", "{74903BDE-64DF-4A19-9C8A-A887EBC59A15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebViewSample", "Source\WebViewSample\WebViewSample.csproj", "{3D30306F-E706-4A29-9FA0-6D418DFBB104}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebViewSample.Android", "Source\WebViewSample.Android\WebViewSample.Android.csproj", "{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebViewSample.Desktop", "Source\WebViewSample.Desktop\WebViewSample.Desktop.csproj", "{805C0E93-19FC-482D-BEDF-A6C92ABD990D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebViewSample.iOS", "Source\WebViewSample.iOS\WebViewSample.iOS.csproj", "{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,30 +33,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CFAF1D5B-DE87-4D65-8D9C-E37F7D0C6B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFAF1D5B-DE87-4D65-8D9C-E37F7D0C6B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFAF1D5B-DE87-4D65-8D9C-E37F7D0C6B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFAF1D5B-DE87-4D65-8D9C-E37F7D0C6B74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87DE2D5F-4B5D-4149-B037-E44C6471AF9D}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{AD3419E9-9797-4E37-9712-9F5B6E0BCF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD3419E9-9797-4E37-9712-9F5B6E0BCF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD3419E9-9797-4E37-9712-9F5B6E0BCF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD3419E9-9797-4E37-9712-9F5B6E0BCF73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98C1B42C-1A0F-41C6-A7BD-B33BF4DE65FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{74903BDE-64DF-4A19-9C8A-A887EBC59A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74903BDE-64DF-4A19-9C8A-A887EBC59A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74903BDE-64DF-4A19-9C8A-A887EBC59A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74903BDE-64DF-4A19-9C8A-A887EBC59A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D30306F-E706-4A29-9FA0-6D418DFBB104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D30306F-E706-4A29-9FA0-6D418DFBB104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D30306F-E706-4A29-9FA0-6D418DFBB104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D30306F-E706-4A29-9FA0-6D418DFBB104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C223781-EDF4-4327-BC24-2C9A1A2EF9BD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{805C0E93-19FC-482D-BEDF-A6C92ABD990D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805C0E93-19FC-482D-BEDF-A6C92ABD990D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805C0E93-19FC-482D-BEDF-A6C92ABD990D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805C0E93-19FC-482D-BEDF-A6C92ABD990D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CA11D0-8EC8-4AEA-929F-068AEBBD16AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
